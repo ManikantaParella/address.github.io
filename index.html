@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <script src="./address.js"></script>
+
     <p id="main-heading">Address Book</p>
     <nav>
         <div class="home-bar">
@@ -18,7 +18,7 @@
                     <a href="#HOME"> HOME </a>
                 </li>
                 <li>
-                    <a href="#SERVICES" onclick="myFunction()">+ADD</a>
+                    <a href="#SERVICES" id="addForm" onclick="myfunction11()">+ADD</a>
                 </li>
 
                 <li class="image_class">
@@ -28,15 +28,46 @@
         </div>
 
     </nav>
+
+    <p id="demo2"></p>
+
     <div class="containerDetails">
         <p class="contact">CONTACTS</p>
         <div class="container">
-            <div class="details" onclick="userDetails()">
-                <p id="name">Chandermani Arora</p>
+            <div id="details">
+            </div>
+
+        </div>
+    </div>
+    <div id="individualDetails">
+
+
+    </div>
+    <form action="" id="myform">
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" class="name" onchange="validateName()"><span id="name1">*</span><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" onchange="validateName()"><span id="myEmail">*</span><br>
+        <label for="fname">Mobile</label>
+        <label for="email" id="line" class="name">Landline</label><br>
+        <input type="text" id="mob" class="name" onchange="mobileNumber()"><span id="name2">*</span>
+        <input type="text" id="land" onchange="landlineNumber()"><span id="mobileid">*</span><br>
+        <label for="fname">Website</label><br>
+        <input type="text" id="website" class="name" onchange="validateName()"><span id="name3">*</span><br>
+        <label for="email">Address</label><br>
+        <textarea name="" id="address"></textarea><span id="name4">*</span><br>
+        <input type="button" id="button" class="Message" value="ADD" onclick="submitForm()"><br>
+        <input type="reset" class="Message" value="Clear Form">
+    </form>
+    <script src="./address1.js"></script>
+</body>
+
+</html>
+<!--   <p id="name">Chandermani Arora</p>
                 <p id="mail">chandermani@healthonus.com</p>
                 <p id="number">+91 92929292929</p>
-            </div>
-           <!-- <div class="details">
+           
+            <div class="details">
                 <p class="name">Sashi Pagadala</p>
                 <p>vijay@healthonus.com</p>
                 <p>+91 92929292929</p>
@@ -51,10 +82,7 @@
                 <p>vijay@healthonus.com</p>
                 <p>+91 92929292929</p>
             </div>-->
-        </div>
-    </div>
-        <div class="individualDetails">
-            <p id="nameOfUser">Praveen Battula</p>
+<!-- <p id="nameOfUser">Praveen Battula</p>
             <p id="emailOfUser">Email:praveen@technovert.com</p>
             <p id="mobile">Mobile: +91 923 345 2342</p>
             <p id="landline">Landline: 040 30 123 1211</p>
@@ -64,25 +92,4 @@
                      Some street
                      Madhapur, Hyderabad 500033
             
-            </pre>
-        </div>
-        <form action="" id="myform">
-            <label for="fname">Name</label><br>
-            <input type="text" id="fname" class="name" onchange="validateName()"><span id="name1">*</span><br>
-            <label for="email">Email</label><br>
-            <input type="text" id="email" onchange="validateName()"><span id="myEmail">*</span><br>
-            <label for="fname">Mobile</label>
-            <label for="email" id="line">Landline</label><br>
-            <input type="text" id="mob" class="name" onchange="validateName()"><span id="name1">*</span>
-            <input type="text" id="land" onchange="validateName()"><span id="myEmail">*</span><br>
-            <label for="fname">Website</label><br>
-            <input type="text" id="website" class="name" onchange="validateName()"><span id="name1">*</span><br>
-            <label for="email">Address</label><br>
-            <textarea name="" id="address"></textarea><br>
-            <input type="button" id="button" class="Message" value="ADD" onclick="validate()"><br>
-            <input type="reset" class="Message" value="Clear Form">
-        </form>
-   
-</body>
-
-</html>
+            </pre>-->
